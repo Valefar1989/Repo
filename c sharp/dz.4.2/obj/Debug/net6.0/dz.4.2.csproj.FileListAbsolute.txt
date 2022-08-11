@@ -1,0 +1,15 @@
+D:\repo\repo_dz\c sharp\dz.4.2\bin\Debug\net6.0\dz.4.2.exe
+D:\repo\repo_dz\c sharp\dz.4.2\bin\Debug\net6.0\dz.4.2.deps.json
+D:\repo\repo_dz\c sharp\dz.4.2\bin\Debug\net6.0\dz.4.2.runtimeconfig.json
+D:\repo\repo_dz\c sharp\dz.4.2\bin\Debug\net6.0\dz.4.2.dll
+D:\repo\repo_dz\c sharp\dz.4.2\bin\Debug\net6.0\dz.4.2.pdb
+D:\repo\repo_dz\c sharp\dz.4.2\obj\Debug\net6.0\dz.4.2.csproj.AssemblyReference.cache
+D:\repo\repo_dz\c sharp\dz.4.2\obj\Debug\net6.0\dz.4.2.GeneratedMSBuildEditorConfig.editorconfig
+D:\repo\repo_dz\c sharp\dz.4.2\obj\Debug\net6.0\dz.4.2.AssemblyInfoInputs.cache
+D:\repo\repo_dz\c sharp\dz.4.2\obj\Debug\net6.0\dz.4.2.AssemblyInfo.cs
+D:\repo\repo_dz\c sharp\dz.4.2\obj\Debug\net6.0\dz.4.2.csproj.CoreCompileInputs.cache
+D:\repo\repo_dz\c sharp\dz.4.2\obj\Debug\net6.0\dz.4.2.dll
+D:\repo\repo_dz\c sharp\dz.4.2\obj\Debug\net6.0\refint\dz.4.2.dll
+D:\repo\repo_dz\c sharp\dz.4.2\obj\Debug\net6.0\dz.4.2.pdb
+D:\repo\repo_dz\c sharp\dz.4.2\obj\Debug\net6.0\dz.4.2.genruntimeconfig.cache
+D:\repo\repo_dz\c sharp\dz.4.2\obj\Debug\net6.0\ref\dz.4.2.dll

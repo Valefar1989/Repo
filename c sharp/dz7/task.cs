@@ -1,76 +1,52 @@
+//using FunctionsOfArray;
+
 namespace Tasks
 {
     public class tasks
     {
-
-
         //FunctionsOfArrayClass ar = new FunctionsOfArrayClass();
 
-
-        // Task 34
-        public int CountEvenNumbers(int[] array0)
+        // Task 50
+        public void ExistenceCheck(int[,] array)
         {
+            int columns = array.GetLength(1);
+            int rows = array.GetLength(0);
+            Console.Write($"Введите номер столбца [1 - {columns}]: ");
+            int column = Convert.ToInt16(Console.ReadLine()) - 1;
+            Console.Write($"Введите номер строки [1 - {rows}]: ");
+            int row = Convert.ToInt16(Console.ReadLine()) - 1;
 
-            int count = 0;
-            for (int i = 0; i < array0.Length; i++)
+            if ((column >= 0 && column < columns) && (row >= 0 && row < rows))
             {
-                if (array0[i] % 2 == 0)
-                {
-                    count++;
-                }
+                Console.WriteLine($"Элемент, расположенный в {column + 1} столбце и в {row + 1} строке, равен: {array[row, column]}");
             }
-
-            return count;
-
+            else
+            {
+                Console.WriteLine($"Элемента, расположенного в {column + 1} столбце и в {row + 1} строке, не существует");
+            }
         }
 
-
-
-        // Task 36
-        public int SumNotEvenPos(int[] array0)
+        // Task 52
+        public void AvgColumnsArray(int[,] array)
         {
-
-            int sum = 0;
-            for (int i = 0; i < array0.Length; i++)
+            int columns = array.GetLength(1);
+            int rows = array.GetLength(0);
+            double sum = 0;
+            double avg = 0;
+            Console.Write("Среднее арифметическое каждого столбца: ");
+            for (int j = 0; j < columns; j++)
             {
-                if (!(i % 2 == 0))
+                for (int i = 0; i < rows; i++)
                 {
-                    sum += array0[i];
+                    sum += array[i, j];
                 }
+                avg = Math.Round((sum / rows), 1);
+                Console.Write(avg + "; ");
+                sum = 0;
             }
-
-            return sum;
-
+            Console.Write("\b\b ");
+            Console.WriteLine();
         }
-
-
-
-        // Task 38
-        public double DifferenceMinMax(double[] array0)
-        {
-
-            double min = double.PositiveInfinity;
-            double max = double.NegativeInfinity;
-            double result = 0;
-
-            for (int i = 0; i < array0.Length; i++)
-            {
-                if (array0[i] > max)
-                {
-                    max = array0[i];
-                }
-                if (array0[i] < min)
-                {
-                    min = array0[i];
-                }
-            }
-
-            result = Math.Round(Math.Abs(Math.Abs(max) - Math.Abs(min)), 2);
-            return result;
-
-        }
-
-
 
     }
 }

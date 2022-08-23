@@ -2,67 +2,69 @@ namespace FunctionsOfArray
 {
     public class FunctionsOfArrayClass
     {
-
-        public int[] AutoFillArray(int[] array0, int startNumber = -10, int finishNumber = 10)
+        public void AutoFillTwoArray(double[,] array, int startNumber = -10, int finishNumber = 10)
         {
-
             finishNumber++;
             Random random = new Random();
-
-            for (int i = 0; i < array0.Length; i++)
+            for (int i = 0; i < array.GetLength(0); i++)
             {
-                array0[i] = random.Next(startNumber, finishNumber);
+                for (int j = 0; j < array.GetLength(1); j++)
+                {
+                    array[i, j] = random.NextDouble(startNumber, finishNumber);
+                }
             }
-
-            return array0;
-
         }
 
 
 
-        public void PrintArray(int[] array0)
+        public void PrintTwoArray(double[,] array)
         {
-
-            Console.Write("[");
-            for (int i = 0; i < array0.Length; i++)
+            for (int i = 0; i < array.GetLength(0); i++)
             {
-                Console.Write(array0[i] + ", ");
+                for (int j = 0; j < array.GetLength(1); j++)
+                {
+                    Console.Write(Math.Round(array[i, j], 1) + "\t");
+                }
+                Console.WriteLine();
             }
-            Console.Write("\b\b]");
-            Console.WriteLine();
-
         }
 
 
 
-        public double[] AutoFillArrayReal(double[] array0, int startNumber = -10, int finishNumber = 10)
+        public void cls()
         {
+            Console.Clear();
+        }
 
+
+
+        public void FillArray(int[,] array, int startNumber = 0, int finishNumber = 10)
+        {
             finishNumber++;
             Random random = new Random();
-
-            for (int i = 0; i < array0.Length; i++)
+            int rows = array.GetLength(0);
+            int columns = array.GetLength(1);
+            for (int i = 0; i < rows; i++)
             {
-                array0[i] = random.NextDouble(startNumber, finishNumber);
+                for (int j = 0; j < columns; j++)
+                {
+                    array[i, j] = random.Next(startNumber, finishNumber);
+                }
             }
-
-            return array0;
-
         }
 
-
-
-        public void PrintArrayReal(double[] array0)
+        public void PrintArray(int[,] array)
         {
-
-            Console.Write("[");
-            for (int i = 0; i < array0.Length; i++)
+            int rows = array.GetLength(0);
+            int columns = array.GetLength(1);
+            for (int i = 0; i < rows; i++)
             {
-                Console.Write(Math.Round(array0[i], 2) + "; ");
+                for (int j = 0; j < columns; j++)
+                {
+                    Console.Write(array[i, j] + "\t");
+                }
+                Console.WriteLine();
             }
-            Console.Write("\b\b]");
-            Console.WriteLine();
-
         }
 
 
@@ -84,10 +86,8 @@ namespace FunctionsOfArray
         }
     }
 
+
+
     // Random r = new Random();
     // r.NextDouble(-20, 20);
     // r.NextDouble(20);
-
-
-
-}

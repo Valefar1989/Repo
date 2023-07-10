@@ -18,7 +18,8 @@ def slozhenie(drob_ls_1, drob_ls_2):
 
 # Произведение
 def mult(drob_ls_1, drob_ls_2):
-    znam = int(drob_ls_1[1])*int(drob_ls_2[1])
+    znam = int(drob
+    _ls_1[1])*int(drob_ls_2[1])
     cheslit = int(drob_ls_1[0])*int(drob_ls_2[0])
     new_drob = str(cheslit)+'/'+str(znam)
     return new_drob
